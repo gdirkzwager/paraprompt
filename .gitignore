@@ -1,0 +1,14 @@
+# Forecast data and reports
+data/
+reports/
+
+# Cache
+.cache.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/

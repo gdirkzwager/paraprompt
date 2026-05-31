@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Revin",
+        "coordinates": [49.948313, 4.62444],
+        "wind_directions": ["SE", "SSE", "S", "SSW", "SW"],
+        "launch_height": 370,
+        "type": "termalling",
+        "url": "https://bvvf.be/flying_sites/revin"
+    },
+    {
+        "name": "Fumay",
+        "coordinates": [49.987503, 4.720736],
+        "wind_directions": ["W", "WNW", "NW"],
+        "launch_height": 370,
+        "type": "termalling",
+        "url": "https://bvvf.be/flying_sites/fumay"
+    },
+    {
+        "name": "7 Meuses",
+        "coordinates": [50.354166667, 4.86083333],
+        "wind_directions": ["S"],
+        "launch_height": 250,
+        "type": "termalling",
+        "url": "https://fbvl.be/flying_sites/7-meuses"
+    },
+    {
+        "name": "Coo Sud",
+        "coordinates": [50.39611, 5.88806],
+        "wind_directions": ["S"],
+        "launch_height": 480,
+        "type": "termalling",
+        "url": "https://fbvl.be/flying_sites/coo-sud"
+    },
+    {
+        "name": "Coo West",
+        "coordinates": [50.39861,5.88778],
+        "wind_directions": ["W", "SW"],
+        "launch_height": 480,
+        "type": "termalling",
+        "url": "https://fbvl.be/flying_sites/coo-west"
+    },
+    {
+        "name": "Maboge (Bérismenil)",
+        "coordinates": [50.17472,5.64222],
+        "wind_directions": ["SW"],
+        "launch_height": 420,
+        "type": "termalling",
+        "url": "https://fbvl.be/flying_sites/maboge-berismenil"
+    },
+    {
+        "name": "La Roche en Ardenne - Corimont",
+        "coordinates": [50.17972,5.56581],
+        "wind_directions": ["NW"],
+        "launch_height": 291,
+        "type": "termalling",
+        "url": "https://fbvl.be/flying_sites/la-roche-en-ardenne-corimont"
+    },
+    {
+        "name": "Zeltingen Rachtig",
+        "coordinates": [49.9639, 6.9889],
+        "wind_directions": ["NE", "E", "SE"],
+        "launch_height": 234,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Wimeraux",
+        "coordinates": [50.7512, 1.5973],
+        "wind_directions": ["NW", "SW", "S"],
+        "launch_height": 0,
+        "type": "Soaring",
+        "url": ""
+    },
+    {
+        "name": "Cap Blanc Nez",
+        "coordinates": [50.9204, 1.70073 ],
+        "wind_directions": [],
+        "launch_height": 0,
+        "type": "Soaring",
+        "url": ""
+    },
+    {
+        "name": "Sangette",
+        "coordinates": [50.941211, 1.737769],
+        "wind_directions": ["NW"],
+        "launch_height": 0,
+        "type": "Soaring",
+        "url": ""
+    },
+    {
+        "name": "Elpe",
+        "coordinates": [51.2696, 8.4617],
+        "wind_directions": ["O"],
+        "launch_height": 675,
+        "type": "termalling",
+        "url": "https://sauerlandair.de/fluggebiete/elpe"
+    },
+    {
+        "name": "Wennholthausen",
+        "coordinates": [51.299818, 8.187195],
+        "wind_directions": ["SW"],
+        "launch_height": 575,
+        "type": "termalling",
+        "url": "https://sauerlandair.de/gelaende/wenholthausen-sw/"
+    },
+    {
+        "name": "Düdinghausen",
+        "coordinates": [51.262441, 8.669705],
+        "wind_directions": ["SO"],
+        "launch_height": 735,
+        "type": "termalling",
+        "url": "https://sauerlandair.de/fluggebiete/duedinghausen",
+        "notes": "No guest flight policy"
+    },
+    {
+        "name": "Willingen Ettelsberg",
+        "coordinates": [51.281203, 8.597946],
+        "wind_directions": ["N"],
+        "launch_height": 794,
+        "type": "termalling",
+        "url": "https://sauerlandair.de/fluggebiete/willingen"
+    },{
+        "name": "Willingen Sonnenhang",
+        "coordinates": [51.291898, 8.581493],
+        "wind_directions": ["E"],
+        "launch_height": 790,
+        "type": "termalling",
+        "url": "https://sauerlandair.de/fluggebiete/willingen-sonnenhang"
+    },{
+        "name": "Equihen",
+        "coordinates": [50.6796, 1.567],
+        "wind_directions": ["SW","W"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Zoutelande",
+        "coordinates": [51.492972, 3.499858],
+        "wind_directions": ["SW","W"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Westenschouwen",
+        "coordinates": [51.670751, 3.706383],
+        "wind_directions": ["Z","ZW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Nieuw Haamstede",
+        "coordinates": [51.707782, 3.680926],
+        "wind_directions": ["Z","ZW","W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Maasvlakte",
+        "coordinates": [51.9259, 3.982030],
+        "wind_directions": ["SW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Maasvlakte N",
+        "coordinates": [51.981561, 4.047194],
+        "wind_directions": ["N", "NO"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Wassenaarseslag",
+        "coordinates": [52.165711, 4.352188],
+        "wind_directions": ["W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },{
+        "name": "Wijk aan zee",
+        "coordinates": [52.508756, 4.591812],
+        "wind_directions": ["ZW", "W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Camperduin",
+        "coordinates": [52.7189, 4.64015],
+        "wind_directions": ["W"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Petten",
+        "coordinates": [52.7777, 4.6642],
+        "wind_directions": ["W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Plus 4",
+        "coordinates": [52.240114, 6.708056],
+        "wind_directions": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Achterhoekse Vliegers",
+        "coordinates": [52.038515, 6.419741],
+        "wind_directions": ["NE", "E", "SE", "SW", "W", "NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Letanne",
+        "coordinates": [49.557426, 5.059612],
+        "wind_directions": ["N","NE"],
+        "launch_height": 260,
+        "type": "soaring",
+        "url": ""
+    }
+]
