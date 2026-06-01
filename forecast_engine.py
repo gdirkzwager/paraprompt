@@ -284,7 +284,13 @@ def score_day(hourly_day: pd.DataFrame, site: dict) -> dict:
     hourly_day: subset of hourly_df for a single date, filtered to flying hours.
     """
     if hourly_day.empty:
-        return {"score": 0.0, "verdict": "no-data", "n_hours": 0,
+        return {"score": math.nan, "verdict": "no-data", "n_hours": 0,
+                "hour_scores": [], "hour_metrics": []}
+
+    # Drop hours where wind speed is absent (beyond model forecast horizon)
+    hourly_day = hourly_day[hourly_day["wind_speed_10m"].notna()]
+    if hourly_day.empty:
+        return {"score": math.nan, "verdict": "no-data", "n_hours": 0,
                 "hour_scores": [], "hour_metrics": []}
 
     results      = [score_hour(row, site) for _, row in hourly_day.iterrows()]
@@ -388,6 +394,7 @@ def ensemble_daily_scores(
             per_model_scores[m][date]
             for m in per_model_scores
             if date in per_model_scores[m]
+            and per_model_scores[m][date]["verdict"] != "no-data"
         ]
         if not day_scores:
             continue
@@ -426,6 +433,7 @@ def ensemble_daily_scores(
                 m: per_model_scores[m][date]["score"]
                 for m in per_model_scores
                 if date in per_model_scores[m]
+                and per_model_scores[m][date]["verdict"] != "no-data"
             },
         }
     return result
