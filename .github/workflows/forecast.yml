@@ -2,7 +2,7 @@ name: Publish Forecast
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # 05:00 UTC daily — fresh data before the flying day
+    - cron: '0 * * * *'   # every hour
   push:
     branches: [main]
   workflow_dispatch:       # allow manual re-runs from the Actions tab
@@ -35,6 +35,8 @@ jobs:
             openmeteo-requests requests-cache retry-requests \
             numpy pandas matplotlib metpy \
             jupyter nbconvert
+        env:
+          UV_SYSTEM_PYTHON: "1"
 
       # Remove stale request cache so we always fetch live data in CI
       - name: Clear API cache
