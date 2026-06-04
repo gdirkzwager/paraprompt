@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import time
 from datetime import datetime
 
 import openmeteo_requests
@@ -204,7 +205,9 @@ def fetch_all_sites(sites_file: str = "sites.json") -> list[dict]:
 
     client  = _make_client()
     results = []
-    for site in sites:
+    for i, site in enumerate(sites):
+        if i > 0:
+            time.sleep(2)  # avoid Open-Meteo per-minute rate limit
         print(f"  {site['name']}:")
         model_data: dict[str, dict] = {}
         for model in MODELS:
