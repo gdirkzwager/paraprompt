@@ -48,21 +48,21 @@ jobs:
             --ExecutePreprocessor.timeout=900 \
             theflyguy.ipynb --output theflyguy.ipynb
 
-      # Create an index.html that redirects to the most-recently generated report
-      - name: Create index redirect
+      # Rename the generated report to latest.html and create a root index redirect
+      - name: Publish as latest
         run: |
           LATEST=$(ls reports/forecast_report_*.html | sort | tail -1)
-          BASENAME=$(basename "$LATEST")
-          cat > reports/index.html <<EOF
+          cp "$LATEST" reports/latest.html
+          cat > reports/index.html <<'EOF'
           <!DOCTYPE html>
           <html lang="en">
           <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=$BASENAME">
+            <meta http-equiv="refresh" content="0; url=latest.html">
             <title>Paragliding Forecast</title>
           </head>
           <body>
-            <p>Redirecting to <a href="$BASENAME">latest forecast ($BASENAME)</a>…</p>
+            <p>Redirecting to <a href="latest.html">latest forecast</a>…</p>
           </body>
           </html>
           EOF
