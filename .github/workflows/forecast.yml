@@ -1,0 +1,80 @@
+name: Publish Forecast
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 05:00 UTC daily — fresh data before the flying day
+  push:
+    branches: [main]
+  workflow_dispatch:       # allow manual re-runs from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install dependencies
+        run: |
+          uv pip install --system \
+            openmeteo-requests requests-cache retry-requests \
+            numpy pandas matplotlib metpy \
+            jupyter nbconvert
+
+      # Remove stale request cache so we always fetch live data in CI
+      - name: Clear API cache
+        run: rm -f .cache .cache.sqlite
+
+      - name: Execute notebook
+        run: |
+          jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=900 \
+            theflyguy.ipynb --output theflyguy.ipynb
+
+      # Create an index.html that redirects to the most-recently generated report
+      - name: Create index redirect
+        run: |
+          LATEST=$(ls reports/forecast_report_*.html | sort | tail -1)
+          BASENAME=$(basename "$LATEST")
+          cat > reports/index.html <<EOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=$BASENAME">
+            <title>Paragliding Forecast</title>
+          </head>
+          <body>
+            <p>Redirecting to <a href="$BASENAME">latest forecast ($BASENAME)</a>…</p>
+          </body>
+          </html>
+          EOF
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

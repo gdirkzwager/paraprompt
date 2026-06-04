@@ -222,5 +222,21 @@
         "launch_height": 260,
         "type": "soaring",
         "url": ""
+    },
+    {
+        "name": "Castricum",
+        "coordinates": [52.5443930, 4.602913],
+        "wind_directions": ["W","NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "De Heij",
+        "coordinates": [52.020204, 4.151881],
+        "wind_directions": ["NW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
     }
 ]
