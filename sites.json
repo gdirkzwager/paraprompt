@@ -204,7 +204,7 @@
         "coordinates": [52.240114, 6.708056],
         "wind_directions": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
         "launch_height": 0,
-        "type": "soaring",
+        "type": "termalling",
         "url": ""
     },
     {
@@ -212,7 +212,7 @@
         "coordinates": [52.038515, 6.419741],
         "wind_directions": ["NE", "E", "SE", "SW", "W", "NW"],
         "launch_height": 0,
-        "type": "soaring",
+        "type": "termalling",
         "url": ""
     },
     {
@@ -220,7 +220,7 @@
         "coordinates": [49.557426, 5.059612],
         "wind_directions": ["N","NE"],
         "launch_height": 260,
-        "type": "soaring",
+        "type": "termalling",
         "url": ""
     },
     {
@@ -238,5 +238,22 @@
         "launch_height": 0,
         "type": "soaring",
         "url": ""
+    },
+    {
+        "name": "Iferno",
+        "coordinates": [52.4909163,6.6549624],
+        "wind_directions": ["N","NE","E", "SE", "S", "SW", "W", "NW"],
+        "launch_height": 260,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Rockanje",
+        "coordinates": [51.8792811,4.0500173],
+        "wind_directions": ["SSW", "SW", "WSW"],
+        "launch_height": 0,
+        "type": "soaring",
+        "url": ""
     }
+
 ]
