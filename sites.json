@@ -240,7 +240,7 @@
         "url": ""
     },
     {
-        "name": "Iferno",
+        "name": "Inferno",
         "coordinates": [52.4909163,6.6549624],
         "wind_directions": ["N","NE","E", "SE", "S", "SW", "W", "NW"],
         "launch_height": 260,
@@ -253,6 +253,62 @@
         "wind_directions": ["SSW", "SW", "WSW"],
         "launch_height": 0,
         "type": "soaring",
+        "url": ""
+    },
+    {
+        "name": "Reinhardsmunster",
+        "coordinates": [48.6775, 7.312],
+        "wind_directions": ["NE", "E", "SE"],
+        "launch_height": 505,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Hommert",
+        "coordinates": [48.680146, 7.189457],
+        "wind_directions": ["NE", "N"],
+        "launch_height": 435,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Breitenbach",
+        "coordinates": [48.383207, 7.280195],
+        "wind_directions": ["SE", "S", "SW", "W"],
+        "launch_height": 931,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Altenberg",
+        "coordinates": [48.2985, 7.3115],
+        "wind_directions": ["N", "NE", "E"],
+        "launch_height": 772,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Almatt Gaschney",
+        "coordinates": [48.033199, 7.037799],
+        "wind_directions": ["E", "SE", "S", "SW", "W"],
+        "launch_height": 1179,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Le Drumont",
+        "coordinates": [47.8986, 6.9184],
+        "wind_directions": ["N", "NE", "SE"],
+        "launch_height": 1182,
+        "type": "termalling",
+        "url": ""
+    },
+    {
+        "name": "Tre Markstein",
+        "coordinates": [47.9256, 7.011],
+        "wind_directions": ["S", "SW", "W", "NW"],
+        "launch_height": 1216,
+        "type": "termalling",
         "url": ""
     }
 
